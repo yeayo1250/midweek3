@@ -1,0 +1,27 @@
+<div class="card" style="width: 50rem;">
+    <h3>Mid3</h3>
+    <ul class="list-group">
+
+<h4>List of Participants</h4>
+
+<div class="card-body">
+    <table class="table">
+        <tbody>
+          <tr *ngFor="let participant of display">
+              <td>{{participant.name}}</td>
+              <td class="text-center bg-primary">{{participant.age}} years old</td>
+          </tr>
+        </tbody>
+    </table>
+</div>
+
+   
+
+    <div class="btn-group float-end" role="group" >
+        <button class="btn btn-danger" (click)="showMale()">Male</button>
+        <button  class="btn btn-warning " (click)="showFemale()">Female</button>
+        <button  class="btn btn-success" (click)="showAll()">All</button>
+    </div>
+    
+  </ul>
+</div>
